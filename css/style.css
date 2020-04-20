@@ -1,0 +1,71 @@
+body {
+  font-family: Helvetica;
+}
+
+.primary{
+  font-style: oblique;
+}
+
+#save{
+  background-color: #f44336;
+
+}
+
+#delete-all{
+  background-color: #008CBA;
+}
+
+#delete{
+  background-color: #4CAF50;
+}
+
+
+#form-wrapper {
+  width: 20%;
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+}
+
+.form-item {
+  margin-right: 3.8rem;
+}
+
+label.primary {
+  display: block;
+  margin: 1.0em 0;
+}
+
+label::after {
+  content: ":";
+}
+
+button, input[type="submit"] {
+  margin-top: 1rem;
+}
+
+#grocery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  color: blue;
+}
+.grocery-manager-list-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 3px solid #20437c;
+  border-radius: 10%;
+  background: #19FFFF;
+}

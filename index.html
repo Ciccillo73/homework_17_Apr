@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <img src="css/image.jpg" width="100%" height="100%">
+    <script src="./js/app.js"></script>
+    <meta charset="utf-8">
+    <title>Grocery Manager App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  </head>
+  <body>
+      <h1>Grocery Manager</h1>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="product" class="primary">Product Name</label>
+          <input type="text" id="product" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="expire" class="primary">Expire date</label>
+          <input type="date"  id="expire" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="type" class="primary">Type</label>
+          <select id="type">
+            <option value="" disabled selected></option>
+            <option value="Dairy">Dairy</option>
+            <option value="Meat and Poultry">Meat and Poultry</option>
+            <option value="Fish and Seafood">Fish and Seafood</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Grains, Beans and Nuts">Grains, Beans and Nuts</option>
+          </select>
+        </div>
+      </div>
+
+        <div class="buttons">
+          <input id="save" type="submit" value="Save"/>
+        </div>
+    </form>
+
+       <div class="buttons">
+         <button id="delete">Delete</button>
+         <button id="delete-all">Delete everything</button>
+       </div>
+
+
+
+      <ul id="grocery-manager"></ul>
+  </body>
+</html>
